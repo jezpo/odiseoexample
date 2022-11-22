@@ -1,0 +1,13 @@
+{
+    "name": "Bienestarejemplo",
+    "alias": "bienestarejemplo",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Bienestarejemplo\\Providers\\BienestarejemploServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
