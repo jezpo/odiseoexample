@@ -83,8 +83,7 @@
                         <div class="col-xl-5 d-flex d-xl-block justify-content-center">
                             <div id="data-table-combine_filter" class="dataTables_filter">
                                 <label>Buscar:
-                                    <input type="search" class="form-control form-control-sm" placeholder=""
-                                        aria-controls="data-table-combine">
+                                    <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="data-table-combine">
                                 </label>
                             </div>
                         </div>
@@ -396,9 +395,9 @@
                                                             <div class="text-center">
                                                                 <br>
                                                                 <label>TIPO DE BECA:</label>
-                                                                <select title="Pick a number" class="selectpicker">
-                                                                    <option selected>Beca Alimentacion</option>
-                                                                    <option>Beca Internado</option>
+                                                                <select name="data-table-combine_length" aria-controls="data-table-combine" class="custom-select custom-select-sm form-control form-control-sm" style="width: 290px;">
+                                                                    <option id="demo_overview_minimal" class="form-control" data-role="select-dropdown" data-profile="minimal">Beca Alimentacion</option>
+                                                                    <option id="demo_overview_minimal" class="form-control" data-role="select-dropdown" data-profile="minimal">Beca Internado</option>
                                                                 </select>
                                                                 <br>
                                                                 <br>
