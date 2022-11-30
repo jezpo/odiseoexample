@@ -92,10 +92,10 @@
                     <table id="ejemplo" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
-                                <th>RU</th>
-                                <th>CI</th>
-                                <th>NOMBRE</th>
-                                <th>CARRERA</th>
+                                <th class="text-nowrap sorting" tabindex="0" aria-controls="data-table-combine" rowspan="1" colspan="1" style="width: 109px;" data-column-index="2" aria-label="Rendering engine: activate to sort column ascending">RU</th>
+                                <th class="text-nowrap sorting" tabindex="0" aria-controls="data-table-combine" rowspan="1" colspan="1" style="width: 133px;" data-column-index="4" aria-label="Platform(s): activate to sort column ascending">CI</th>
+                                <th class="text-nowrap sorting" tabindex="0" aria-controls="data-table-combine" rowspan="1" colspan="1" style="width: 133px;" data-column-index="4" aria-label="Platform(s): activate to sort column ascending">NOMBRE</th>
+                                <th class="text-nowrap sorting" tabindex="0" aria-controls="data-table-combine" rowspan="1" colspan="1" style="width: 133px;" data-column-index="4" aria-label="Platform(s): activate to sort column ascending">CARRERA</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -395,7 +395,7 @@
                                                         <div class="col-12">
                                                             <div class="text-center">
                                                                 <br>
-                                                                <label>Tipo De Beca:</label>
+                                                                <label>TIPO DE BECA:</label>
                                                                 <select title="Pick a number" class="selectpicker">
                                                                     <option selected>Beca Alimentacion</option>
                                                                     <option>Beca Internado</option>
