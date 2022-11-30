@@ -369,7 +369,7 @@
                     </tfoot>
                 </table>
                 <!--end table -->
-                <div class="btn-group">
+                <div class="row justify-content-around">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Nueva Recepcion</button>
                     <button class="btn btn-primary" type="button" class="col-from-label col-md-5">Imprimir</button>
                     
@@ -385,27 +385,32 @@
                                 </div>
                                 <form class="modal-content">
                                     <div>
-                                        <div class="form-group row">
-                                            <div class="col-xs-10">
+                                        <div class="form-group row" class="grid-container">
+                                            <div class="col-xs-12">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="text-center">
-                                                            <label for="inputState" class="col-xs-2 col-form-label">Tipo De Beca:</label>
-                                                            
-                                                            <select type="select">
+                                                            <br>
+                                                            <label >Tipo De Beca:</label>
+                                                            <select title="Pick a number" class="selectpicker">
                                                                 <option selected>Beca Alimentacion</option>
                                                                 <option>Beca Internado</option>
                                                             </select>
                                                             <br>
-                                                            <label class="col-from-label col-md-3">RU:</label>
+                                                            <br>
+                                                            <label class="col-from-label col-md-1">RU:</label>
                                                             <!-- Botón de éxito -->
-                                                            <input type="input" class="input"></input>
+                                                            <input type="input" class="input" class="col-from-label col-md-1"></input>
                                                             <!-- Botón de información  -->
+                                                            <br>
+                                                            <br>
                                                             <button type="button" class="btn btn-info">Buscar</button>
                                                         </div>
+                                                        <br>
+                                                        <br>
                                                     </div>
-                                                    <div class="col-6">
-                                                        <label class="col-from-label col-md-3">CI:</label>
+                                                    <div class="col-6" class="row justify-content-around">
+                                                        <label class="col-from-label col-md-3" >CI:</label>
                                                         <input type="input" class="input" class="col-xs-10"></input>
                                                         <br>
                                                         <label class="col-from-label col-md-3">RU:</label>
@@ -422,20 +427,26 @@
                                                         <br>
                                                         <label class="col-from-label col-md-3">CARRERA:</label>
                                                         <input type="input" class="input" class="col-xs-10"></input>
-                                                        <div class="col-xs-10"><button type="button" class="btn btn-info">Aceptar Folder</button>
+                                                        <div class="col-xs-10"> 
+                                                            <br>
+                                                            <button type="button" class="btn btn-info">ACEPTAR FOLDER</button>
                                                         </div>
                                                     </div>
                                                     <div class="col-6">
-                                                        <br>
-                                                        <br>
-                                                        <label class="col-from-label col-md-5">OBSERVACION:</label>
-                                                        <input type="input" class="input" class="col-xs-10"></input>
-                                                        <label class="col-from-label col-md-5">FECHA DE AGENDAMIENTO:</label>
-                                                        <input type="datetime-local" id="meeting-time" name="meeting-time" input type="date-time"></input>
-                                                            <button type="button"class="btn btn-info">Rechasar</button>
-                                                        <br>
-                                                        <br>
                                                         
+                                                        
+                                                        <label class="col-from-label col-md-4" style="padding-left: 1px;">OBSERVACION:</label>
+                                                        <input type="input" class="input" class="col-xs-4"></input>
+                                                        <label class="col-from-label col-md-4" style="padding-left: 1px;">FECHA DE AGENDAMIENTO:</label>
+                                                        <input type="datetime-local" id="meeting-time" name="meeting-time" input type="date-time" class="col-from-label col-md-6"></input>
+                                                        <br>
+                                                        <br>
+                                                        <div>
+                                                            <button type="button"class="btn btn-info" class="col-from-label col-md-4">Rechazar</button>
+                                                        </div>
+                                                            
+                                                        <br>
+                                                        <br> 
                                                     </div>
                                                 </div>
                                             </div> <!-- more inputs -->
