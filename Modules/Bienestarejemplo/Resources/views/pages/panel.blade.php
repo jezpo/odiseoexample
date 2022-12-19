@@ -392,27 +392,24 @@
                                                 <div class="col-xs-12">
                                                     <div class="row">
                                                         <div class="col-12">
-                                                            <div class="text-center">
-                                                                <br>
+                                                        <br>
+                                                           <br>
+                                                            <div class="d-flex flex-row" >
+
+
+                                        
                                                                 <label>TIPO DE BECA:</label>
-                                                                <select name="data-table-combine_length" aria-controls="data-table-combine" class="custom-select custom-select-sm form-control form-control-sm" style="width: 290px;">
+                                                                <select name="data-table-combine_length" aria-controls="data-table-combine" class="custom-select custom-select-sm form-control form-control-sm" style="width: 230px;">
                                                                     <option id="demo_overview_minimal" class="form-control" data-role="select-dropdown" data-profile="minimal">Beca Alimentacion</option>
                                                                     <option id="demo_overview_minimal" class="form-control" data-role="select-dropdown" data-profile="minimal">Beca Internado</option>
                                                                 </select>
-                                                                <br>
-                                                                <br>
-                                                                <label class="col-from-label col-md-1">RU:</label>
-                                                                <!-- Botón de éxito -->
-                                                                <input type="input" class="input"
-                                                                    class="col-from-label col-md-1"></input>
-                                                                <!-- Botón de información  -->
-                                                                <br>
-                                                                <br>
+                                                                <label class="col-from-label">RU:</label>
+                                                                <input type="input" class="input" class="col-from-label col-md-1"></input>                                                       
                                                                 <button type="button"
                                                                     class="btn btn-info">Buscar</button>
                                                             </div>
-                                                            <br>
-                                                            <br>
+                                                           <br>
+                                                           <br>
                                                         </div>
                                                         <div class="col-6" class="row justify-content-around">
                                                             <label class="col-from-label col-md-3">CI:</label>
