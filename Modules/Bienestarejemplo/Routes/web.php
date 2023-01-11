@@ -10,7 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*dominio
+ */
 Route::prefix('bienestarejemplo')->group(function() {
     Route::get('/', 'BienestarejemploController@index');
     Route::get('/panel', 'BecasController@panel')->name('bienestar.panel');
