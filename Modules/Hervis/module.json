@@ -1,0 +1,13 @@
+{
+    "name": "Hervis",
+    "alias": "hervis",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Hervis\\Providers\\HervisServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
