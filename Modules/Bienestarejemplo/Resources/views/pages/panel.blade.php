@@ -12,15 +12,18 @@
 
 @section('content')
 <!-- begin breadcrumb -->
+{{--
 <ol class="breadcrumb float-xl-right">
     <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
     <li class="breadcrumb-item"><a href="javascript:;">Form Stuff</a></li>
     <li class="breadcrumb-item active">Form Elements</li>
 </ol>
+
 <!-- end breadcrumb -->
 <!-- begin page-header -->
 <h1 class="page-header">Form Elements <small>header small text goes here...</small></h1>
 <!-- end page-header -->
+--}}
 <!-- begin row -->
 <div class="row">
     <div id="data-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer col-xl-12">
@@ -32,7 +35,6 @@
                         <a href="#" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand">
                             <i class="fa fa-expand"></i>
                         </a>
-
                     </div>
                 </div>
                 <div class="panel-body">
@@ -45,8 +47,7 @@
                             <div class="d-block d-lg-inline-flex mr-0 mr-sm-3">
                                 <div class="dataTables_length" id="data-table-combine_length">
                                     <label> Show
-                                        <select name="data-table-combine_length" aria-controls="data-table-combine"
-                                            class="custom-select custom-select-sm form-control form-control-sm">
+                                        <select name="data-table-combine_length" aria-controls="data-table-combine" class="custom-select custom-select-sm form-control form-control-sm">
                                             <option value="10">10</option>
                                             <option value="25">25</option>
                                             <option value="50">50</option>
@@ -57,20 +58,16 @@
                             </div>
                             <div class="d-block d-lg-inline-flex">
                                 <div class="dt-buttons btn-group flex-wrap">
-                                    <button class="btn btn-secondary buttons-copy buttons-html5 btn-sm" tabindex="0"
-                                        aria-controls="data-table-combine" type="button">
+                                    <button class="btn btn-secondary buttons-copy buttons-html5 btn-sm" tabindex="0" aria-controls="data-table-combine" type="button">
                                         <span>Copiar</span>
                                     </button>
-                                    <button class="btn btn-secondary buttons-csv buttons-html5 btn-sm" tabindex="0"
-                                        aria-controls="data-table-combine" type="button">
+                                    <button class="btn btn-secondary buttons-csv buttons-html5 btn-sm" tabindex="0" aria-controls="data-table-combine" type="button">
                                         <span>CSV</span>
                                     </button>
-                                    <button class="btn btn-secondary buttons-excel buttons-html5 btn-sm" tabindex="0"
-                                        aria-controls="data-table-combine" type="button">
+                                    <button class="btn btn-secondary buttons-excel buttons-html5 btn-sm" tabindex="0" aria-controls="data-table-combine" type="button">
                                         <span>Excel</span>
                                     </button>
-                                    <button class="btn btn-secondary buttons-pdf buttons-html5 btn-sm" tabindex="0"
-                                        aria-controls="data-table-combine" type="button">
+                                    <button class="btn btn-secondary buttons-pdf buttons-html5 btn-sm" tabindex="0" aria-controls="data-table-combine" type="button">
                                         <span>PDF</span>
                                     </button>
                                     <button class="btn btn-secondary buttons-print btn-sm" tabindex="0"
@@ -359,7 +356,6 @@
                                 <td>Customer Support</td>
                                 <td>New York</td>
                                 <td>27</td>
-
                             </tr>
                         </tbody>
                         <tfoot>
@@ -372,12 +368,10 @@
                     </table>
                     <!--end table -->
                     <div class="row justify-content-around">
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target=".bd-example-modal-lg">Nueva Recepcion</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" >Nueva Recepcion</button>
                         <button class="btn btn-primary" type="button" class="col-from-label col-md-5">Imprimir</button>
 
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header text-center">
@@ -392,19 +386,22 @@
                                                 <div class="col-xs-12">
                                                     <div class="row">
                                                         <div class="col-12">
-                                                        <br>
-                                                           <br>
-                                                            <div class="d-flex flex-row" >
-
-
-                                        
+                                                            <div class="text-center">
+                                                                <br>
                                                                 <label>TIPO DE BECA:</label>
-                                                                <select name="data-table-combine_length" aria-controls="data-table-combine" class="custom-select custom-select-sm form-control form-control-sm" style="width: 230px;">
+                                                                <select name="data-table-combine_length" aria-controls="data-table-combine" class="custom-select custom-select-sm form-control form-control-sm" style="width: 290px;">
                                                                     <option id="demo_overview_minimal" class="form-control" data-role="select-dropdown" data-profile="minimal">Beca Alimentacion</option>
                                                                     <option id="demo_overview_minimal" class="form-control" data-role="select-dropdown" data-profile="minimal">Beca Internado</option>
                                                                 </select>
-                                                                <label class="col-from-label">RU:</label>
-                                                                <input type="input" class="input" class="col-from-label col-md-1"></input>                                                       
+                                                                <br>
+                                                                <br>
+                                                                <label class="col-from-label col-md-1">RU:</label>
+                                                                <!-- Botón de éxito -->
+                                                                <input type="input" class="input"
+                                                                    class="col-from-label col-md-1"></input>
+                                                                <!-- Botón de información  -->
+                                                                <br>
+                                                                <br>
                                                                 <button type="button"
                                                                     class="btn btn-info">Buscar</button>
                                                             </div>
@@ -412,22 +409,22 @@
                                                            <br>
                                                         </div>
                                                         <div class="col-6" class="row justify-content-around">
-                                                            <label class="col-from-label col-md-3">CI:</label>
+                                                            <label class="col-from-label col-md-3" class="font-weight-bold">CI:</label>
                                                             <input type="input" class="input" class="col-xs-10"></input>
                                                             <br>
-                                                            <label class="col-from-label col-md-3">RU:</label>
+                                                            <label class="col-from-label col-md-3"class="font-weight-bold" >RU:</label>
                                                             <input type="input" class="input" class="col-xs-10"></input>
                                                             <br>
-                                                            <label class="col-from-label col-md-3">PATERNO:</label>
+                                                            <label class="col-from-label col-md-3" class="font-weight-bold">PATERNO:</label>
                                                             <input type="input" class="input" class="col-xs-10"></input>
                                                             <br>
-                                                            <label class="col-from-label col-md-3">MATERNO:</label>
+                                                            <label class="col-from-label col-md-3" class="font-weight-bold">MATERNO:</label>
                                                             <input type="input" class="input" class="col-xs-10"></input>
                                                             <br>
-                                                            <label class="col-from-label col-md-3">NOMBRES:</label>
+                                                            <label class="col-from-label col-md-3" class="font-weight-bold">NOMBRES:</label>
                                                             <input type="input" class="input" class="col-xs-10"></input>
                                                             <br>
-                                                            <label class="col-from-label col-md-3">CARRERA:</label>
+                                                            <label class="col-from-label col-md-3" class="font-weight-bold">CARRERA:</label>
                                                             <input type="input" class="input" class="col-xs-10"></input>
                                                             <div class="col-xs-10">
                                                                 <br>
@@ -436,24 +433,15 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-6">
-
-
-                                                            <label class="col-from-label col-md-4"
-                                                                style="padding-left: 1px;">OBSERVACION:</label>
+                                                            <label class="col-from-label col-md-4" style="padding-left: 1px;"class="font-weight-bold">OBSERVACION:</label>
                                                             <input type="input" class="input" class="col-xs-4"></input>
-                                                            <label class="col-from-label col-md-4"
-                                                                style="padding-left: 1px;">FECHA DE
-                                                                AGENDAMIENTO:</label>
-                                                            <input type="datetime-local" id="meeting-time"
-                                                                name="meeting-time" input type="date-time"
-                                                                class="col-from-label col-md-6"></input>
+                                                            <label class="col-from-label col-md-4" style="padding-left: 1px;" class="font-weight-bold">FECHA DE AGENDAMIENTO:</label>
+                                                            <input type="datetime-local" id="meeting-time" name="meeting-time" input type="date-time" class="col-from-label col-md-6"></input>
                                                             <br>
                                                             <br>
                                                             <div>
-                                                                <button type="button" class="btn btn-info"
-                                                                    class="col-from-label col-md-4">Rechazar</button>
+                                                                <button type="button" class="btn btn-info" class="col-from-label col-md-4">Rechazar</button>
                                                             </div>
-
                                                             <br>
                                                             <br>
                                                         </div>
